@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorista Executivo</title>
+
+  <!-- PWA / Instalar como App -->
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Motorista Executivo" />
+
+  <!-- Ícone do App (SALVE SEU LOGO COMO logo.png NA MESMA PASTA) -->
+  <link rel="icon" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo {
+      width: 250px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      width: 80%;
+      max-width: 300px;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .passageiro {
+      background: #f1b400;
+      color: black;
+      font-weight: bold;
+    }
+
+    .motorista {
+      background: transparent;
+      border: 1px solid #f1b400;
+      color: #f1b400;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 12px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="logo.png" class="logo" />
+
+  <h1>Motorista Executivo</h1>
+
+  <button class="btn passageiro" onclick="window.location.href='https://chamazapss.web.app/app/index.html?sistema=-OlririZmhgBc6wY4TnD'">
+    🚕 Pedir Corrida
+  </button>
+
+  <button class="btn motorista" onclick="window.location.href='https://chamazapss.web.app/app/motorista.html?sistema=-OlririZmhgBc6wY4TnD'">
+    🔐 Sou Motorista
+  </button>
+
+  <div class="footer">
+    Instale este app na sua tela inicial
+  </div>
+</body>
+</html>
